@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harshvardhan Sharma | Java Backend Developer</title>
+<meta name="description" content="Portfolio of Harshvardhan Anil Sharma, Java and backend developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a href="#home" class="logo">HS</a>
+  <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  <nav>
+    <a href="#home">Home</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#projects">Projects</a>
+    <a href="#education">Education</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="status"><span class="dot"></span>Open to entry-level backend roles</p>
+    <h1>Hi, I'm Harshvardhan. I build Java backends.</h1>
+    <p class="lead">I turn ideas into working web applications with Java, Servlets, JDBC and MySQL, organised in clean layers.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">View my work</a>
+      <a class="btn" href="resume/Harshvardhan_Sharma_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+    </div>
+    <div class="social">
+      <a href="https://github.com/harshvardhan-sharma27" target="_blank" rel="noopener"><i class="devicon-github-original"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/harshvardhansharma27" target="_blank" rel="noopener"><i class="devicon-linkedin-plain"></i> LinkedIn</a>
+      <a href="mailto:harshs2227@gmail.com">Email</a>
+    </div>
+  </div>
+  <div class="photo">
+    <img src="images/profile.jpeg" alt="Harshvardhan Sharma" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'HS'}))">
+  </div>
+  <div class="flow" aria-label="Request flow through application layers">
+    <span class="flow-title">A request through QuickServe</span>
+    <div class="flow-row">
+      <div class="node">Browser<small>JSP page</small></div>
+      <div class="node">Controller<small>Servlet</small></div>
+      <div class="node">Service<small>Business logic</small></div>
+      <div class="node">DAO<small>JDBC</small></div>
+      <div class="node">Database<small>MySQL</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="sec">
+  <h2>Skills I work with</h2>
+  <p class="sub">Java web development and the tools around it.</p>
+  <div class="grid skills">
+    <div class="card"><h3>Languages</h3><div class="chips" data-tech="java,c,python"></div></div>
+    <div class="card"><h3>Java web</h3><div class="chips" data-tech="jdbc,servlets,jsp,tomcat"></div></div>
+    <div class="card"><h3>Frameworks</h3><div class="chips" data-tech="spring,springboot,hibernate,maven"></div></div>
+    <div class="card"><h3>Databases</h3><div class="chips" data-tech="mysql,postgresql,sql"></div></div>
+    <div class="card"><h3>Frontend</h3><div class="chips" data-tech="html,css,js,bootstrap,tailwind"></div></div>
+    <div class="card"><h3>Tools</h3><div class="chips" data-tech="git,github,eclipse,workbench,latex"></div></div>
+  </div>
+</section>
+
+<section id="about" class="sec about">
+  <div>
+    <h2>A little about me</h2>
+    <p>I'm a B.Sc. Computer Science graduate, now pursuing M.Sc. Computer Science at DES Pune University. I like understanding how a request travels from the browser to the database and back, and I build projects to learn that properly.</p>
+    <p>I write code in layers (controller, service, DAO), design relational schemas with foreign keys, and handle sessions, roles and errors the way a real application needs. I'm currently training in Java Full Stack at Kiran Academy, Pune.</p>
+  </div>
+  <div class="stats">
+    <div><b data-count="3">0</b><span>Projects built</span></div>
+    <div><b data-count="2">0</b><span>Degrees in progress or done</span></div>
+    <div><b data-count="3">0</b><span>Languages spoken</span></div>
+  </div>
+</section>
+
+<section id="projects" class="sec">
+  <h2>Projects I've built</h2>
+  <p class="sub">Click an image to view it larger.</p>
+  <div class="projects">
+    <article class="project">
+      <img class="zoom" src="images/quickserve.png" alt="QuickServe screenshot" onerror="this.className='shot-ph';this.removeAttribute('src')">
+      <div class="p-body">
+        <h3>QuickServe: Service Marketplace</h3>
+        <p>A full-stack web application where users find and book services. Built with a layered architecture (Controller, Service, DAO, POJO/DTO), a relational database with foreign keys and joins, session management, role-based access control and custom error pages.</p>
+        <div class="chips" data-tech="java,servlets,jsp,jdbc,mysql,html,css,bootstrap,js"></div>
+        <div class="btns"><a class="btn primary" href="https://github.com/harshvardhan-sharma27/QuickServe" target="_blank" rel="noopener"><i class="devicon-github-original"></i> View on GitHub</a></div>
+      </div>
+    </article>
+    <article class="project flip">
+      <img class="zoom" src="images/cgpa.png" alt="CGPA Calculator screenshot" onerror="this.className='shot-ph';this.removeAttribute('src')">
+      <div class="p-body">
+        <h3>CGPA Calculator System <em class="tag">Ongoing</em></h3>
+        <p>A Java application that calculates SGPA and CGPA for students and stores academic records in PostgreSQL, with data validation built in core Java and SQL.</p>
+        <div class="chips" data-tech="java,postgresql,sql"></div>
+        <div class="btns"><a class="btn soon" href="#" data-soon><i class="devicon-github-original"></i> View on GitHub</a></div>
+      </div>
+    </article>
+    <article class="project mini">
+      <div class="p-body">
+        <h3>Automatic Light Control System</h3>
+        <p>An embedded project that switches lights on when a PIR sensor detects motion, coded in the Arduino IDE.</p>
+        <div class="chips" data-tech="arduino"></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="education" class="sec">
+  <h2>Education</h2>
+  <div class="timeline">
+    <div class="t-item"><span class="yr">Pursuing</span><h3>M.Sc. Computer Science</h3><p>DES Pune University, Pune</p></div>
+    <div class="t-item"><span class="yr">2023 – 2026</span><h3>B.Sc. Computer Science</h3><p>Dnyanvardhini College</p></div>
+    <div class="t-item"><span class="yr">2023</span><h3>12th Science</h3><p>Nirmal Bethany Junior College</p></div>
+    <div class="t-item"><span class="yr">2021</span><h3>10th</h3><p>Jai Hind High School</p></div>
+  </div>
+</section>
+
+<section id="certificates" class="sec">
+  <h2>Certificates &amp; achievements</h2>
+  <div class="grid certs">
+    <figure class="cert">
+      <img class="zoom" src="certificates/sih.jpg" alt="Smart India Hackathon 2026 certificate" onerror="this.className='shot-ph';this.removeAttribute('src')">
+      <figcaption><h3>Smart India Hackathon 2026</h3><p>Selected for the second round of the internal selection with Team Dristicare, building an explainable-AI diabetic retinopathy screening solution for rural healthcare.</p></figcaption>
+    </figure>
+    <figure class="cert">
+      <img class="zoom" src="certificates/java-fullstack.jpg" alt="Java Full Stack certificate" onerror="this.className='shot-ph';this.removeAttribute('src')">
+      <figcaption><h3>Java Full Stack Development <em class="tag">Ongoing</em></h3><p>Kiran Academy, Pune. Core Java, JDBC, Servlets, JSP and Spring.</p></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="contact" class="sec contact">
+  <h2>Let's connect</h2>
+  <p class="sub">I'm looking for an entry-level software or backend role. Write to me and I'll reply soon.</p>
+  <div class="btns center">
+    <a class="btn primary" href="mailto:harshs2227@gmail.com">harshs2227@gmail.com</a>
+    <a class="btn" href="tel:+918830923558">+91 88309 23558</a>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Harshvardhan Anil Sharma</footer>
+<div class="toast" id="toast" role="status"></div>
+<div class="lightbox" id="lightbox"><img alt=""></div>
+<script src="script.js"></script>
+</body>
+</html>
